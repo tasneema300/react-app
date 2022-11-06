@@ -61,11 +61,11 @@ const CourseList = ({ courses }) => {
   
   return (
     <>
-      <TermSelector />
+      <TermSelector term={term} setTerm={setTerm} />
       <div className="course-list">
       { termCourses.map(course => <Course key={course.id} course={ course } />) }
       </div>
-    </>
+   </>
   );
 };
 
